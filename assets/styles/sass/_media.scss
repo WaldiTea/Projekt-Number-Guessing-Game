@@ -1,0 +1,9 @@
+@media (max-width: 568px) {
+  .title-container {
+    text-align: center;
+
+    .title-and-image {
+      @include flex(column, space-evenly);
+    }
+  }
+}

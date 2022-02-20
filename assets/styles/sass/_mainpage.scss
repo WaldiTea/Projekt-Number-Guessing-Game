@@ -1,0 +1,140 @@
+@import "_variables.scss";
+
+.secondary-title {
+  font-size: clamp(2em, 4vw, 4em);
+  text-align: center;
+  margin: 2% 0;
+}
+
+form {
+  background: #3a7dd4;
+  width: 35%;
+  margin: auto;
+  border: 5px solid #634bce;
+  border-radius: 1em;
+  padding: 2.5%;
+  text-align: center;
+
+  .form-title {
+    margin: auto;
+  }
+
+  .button-wrapper {
+    display: grid;
+    grid-template-columns: fit-content(100%) fit-content(100%);
+    justify-content: center;
+    grid-gap: 10%;
+    margin: 5%;
+
+    .input-button {
+      font-size: 1.25rem;
+      font-weight: bold;
+      background: #8cd6b5;
+      border: 3px solid #188463;
+      border-radius: 0.75em;
+      width: 5em;
+      height: 5em;
+      transition: background 0.3s, transform 0.3s;
+  
+      &:hover {
+        background: #5abd84;
+        transform: scale(1.25);
+        cursor: pointer;
+      }
+    }
+  }
+
+  .invisible {
+    display: none;
+  }
+
+  .output {
+    display: none;
+  }
+
+  .visible {
+    display: block;
+
+    .input-number {
+      width: 25%;
+      font-size: 1.5rem;
+      border: 1px solid;
+      border-radius: 0.25em;
+      padding-left: 2%;
+      margin-top: 15%;
+    }
+  }
+
+  .custom-tries {
+    display: none;
+  }
+
+  .display-block {
+    display: block;
+  }
+
+  .result {
+    margin: 5% 0 5% 0;
+  }
+
+  .restart {
+    display: none;
+    text-decoration: none;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    background: #8cd6b5;
+    color: #634bce;
+    border: 3px solid $darkGreen;
+    border-radius: 0.5em;
+    padding: 1em 2em;
+    transition: background 0.3s, transform 0.3s;
+
+    &:hover {
+      background: $darkGreen;
+      transform: scale(1.25);
+    }
+  }
+
+  .restart-visible {
+    display: inline-block;
+  }
+
+  #custom-tries-block {
+    margin-top: 10%;
+
+    #customTriesNumber {
+      width: 25%;
+      font-size: 1.5rem;
+      border: 1px solid;
+      border-radius: 0.25em;
+      padding-left: 2%;
+    }
+
+    #set-tries {
+      background: #d65a84;
+      font-size: 1.25rem;
+      padding: 0.5em 1em;
+      border: 2px solid $purple;
+      border-radius: 0.5em;
+      transition: background 0.5s;
+
+      &:hover {
+        background: hsl(340, 60%, 50%);
+      }
+    }
+  }
+
+  #output {
+    input[type="submit"] {
+      background: #d65a84;
+      font-size: 1.25rem;
+      padding: 0.5em 1em;
+      border: 2px solid $purple;
+      border-radius: 0.5em;
+      transition: background 0.5s;
+
+      &:hover {
+        background: hsl(340, 60%, 50%);
+      }
+    }
+  }
+}

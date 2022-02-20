@@ -1,0 +1,24 @@
+@import "_variables.scss";
+
+@font-face {
+  font-family: Poetsen One;
+  src: url(../../fonts/PoetsenOne-Regular.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(#2763b3, #00ffff) no-repeat center/cover;
+  height: 100vh;
+  font-family: 'Poetsen One';
+}
+
+h1 {
+  color: #d65a84;
+      text-shadow: 5px 5px $purple;
+      -webkit-text-stroke: 1px $purple;
+}
